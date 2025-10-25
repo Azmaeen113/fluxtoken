@@ -1,23 +1,23 @@
-import { Globe, Network, Leaf } from "lucide-react";
+import { Globe, Network, Leaf, Cpu, Zap, Shield } from "lucide-react";
 
 const About = () => {
   const pillars = [
     {
-      icon: Network,
-      title: "Blockchain Foundation",
-      description: "Secure, transparent, decentralized infrastructure powering the future of energy",
+      icon: Cpu,
+      title: "Our Mission",
+      description: "Connecting unused GPU and CPU power into a global decentralized compute network. Built on Kaspa's revolutionary blockDAG architecture for unmatched speed and scalability.",
       gradient: "from-primary to-purple-500",
     },
     {
       icon: Globe,
-      title: "IoT Integration",
-      description: "Smart devices, real-time data, and automated systems creating an interconnected world",
+      title: "Our Vision",
+      description: "Creating a sustainable, interconnected world where anyone can provide or consume computing power and earn $KCT rewards. Making high-performance computing accessible to all.",
       gradient: "from-purple-500 to-secondary",
     },
     {
-      icon: Leaf,
-      title: "Clean Energy",
-      description: "Sustainable power, carbon reduction, and building a greener future for all",
+      icon: Shield,
+      title: "Kaspa Powered",
+      description: "Leveraging Kaspa's blockDAG technology for transparent, fast, and fair compute verification. The foundation for next-generation decentralized infrastructure.",
       gradient: "from-secondary to-primary",
     },
   ];
@@ -34,7 +34,7 @@ const About = () => {
             <span className="text-gradient">Pioneering the Future</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            The intersection of blockchain, IoT, and renewable energy
+            The intersection of blockchain, IoT, and decentralized compute
           </p>
         </div>
 
@@ -46,9 +46,7 @@ const About = () => {
             </div>
             <h3 className="text-2xl font-bold mb-4 text-foreground">Our Mission</h3>
             <p className="text-muted-foreground leading-relaxed">
-              FLUX is pioneering the intersection of blockchain technology, IoT infrastructure,
-              and renewable energy. Our mission is to create a sustainable, interconnected world
-              where technology serves both humanity and the planet.
+              KASCompute aims to democratize access to computing power — fast, fair, and borderless through Kaspa's blockDAG technology.
             </p>
           </div>
 
@@ -59,7 +57,7 @@ const About = () => {
             <h3 className="text-2xl font-bold mb-4 text-foreground">Our Vision</h3>
             <p className="text-muted-foreground leading-relaxed">
               Building a decentralized ecosystem that empowers communities through sustainable
-              energy solutions, smart infrastructure, and transparent blockchain technology,
+              computing solutions, smart infrastructure, and transparent blockchain technology,
               creating lasting positive impact for generations to come.
             </p>
           </div>
@@ -70,7 +68,7 @@ const About = () => {
           <h3 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
             Built on Three Pillars
           </h3>
-          <p className="text-muted-foreground">Core technologies powering the FLUX ecosystem</p>
+          <p className="text-muted-foreground">Core technologies powering the KASCompute ecosystem</p>
         </div>
 
         <div className="grid md:grid-cols-3 gap-6 max-w-6xl mx-auto">

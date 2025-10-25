@@ -10,36 +10,19 @@ const Tokenomics = () => {
   const allocations = [
     {
       icon: Droplet,
-      title: "DEX Liquidity",
-      amount: "50M",
-      percentage: 50,
-      description: "Ensuring deep liquidity and stable trading",
+      title: "Proof-of-Compute Rewards",
+      amount: "9B",
+      percentage: 90,
+      description: "Distributed to compute providers as mining rewards over 14 years. Fair launch with no pre-mine or VC allocation.",
       color: "primary",
     },
     {
       icon: Coins,
-      title: "Presale",
-      amount: "30M",
-      percentage: 30,
-      description: "Early supporter allocation and community building",
+      title: "Treasury & Ecosystem",
+      amount: "1B",
+      percentage: 10,
+      description: "Reserved for protocol development, partnerships, liquidity provision, and ecosystem growth initiatives.",
       color: "secondary",
-      badge: "LIVE",
-    },
-    {
-      icon: Megaphone,
-      title: "Marketing",
-      amount: "10M",
-      percentage: 10,
-      description: "Global adoption and ecosystem growth",
-      color: "premium",
-    },
-    {
-      icon: Lock,
-      title: "Founder",
-      amount: "10M",
-      percentage: 10,
-      description: "Team allocation with vesting schedule",
-      color: "accent",
     },
   ];
 
@@ -62,7 +45,7 @@ const Tokenomics = () => {
           <h2 className="text-4xl md:text-6xl font-bold mb-4">
             <span className="text-gradient">Tokenomics</span>
           </h2>
-          <p className="text-xl text-muted-foreground">Powering the Future</p>
+          <p className="text-xl text-muted-foreground">Built for Sustainable Decentralization</p>
         </div>
 
         {/* Total Supply Display */}
@@ -70,14 +53,14 @@ const Tokenomics = () => {
           <div className="glass-card p-8 rounded-3xl relative overflow-hidden">
             <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-secondary/20 animate-gradient-shift"></div>
             <div className="relative z-10">
-              <div className="text-6xl md:text-7xl font-bold text-gradient mb-2">100M</div>
-              <div className="text-muted-foreground text-lg">$FLUX Total Supply</div>
+              <div className="text-6xl md:text-7xl font-bold text-gradient mb-2">10B</div>
+              <div className="text-muted-foreground text-lg">$KCT Total Supply</div>
             </div>
           </div>
         </div>
 
         {/* Allocation Cards */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-16 max-w-6xl mx-auto">
+        <div className="grid md:grid-cols-2 gap-6 mb-16 max-w-4xl mx-auto">
           {allocations.map((item, index) => (
             <div
               key={index}
@@ -88,11 +71,6 @@ const Tokenomics = () => {
                 <div className={`w-12 h-12 bg-${item.color}/20 rounded-xl flex items-center justify-center`}>
                   <item.icon className={`w-6 h-6 text-${item.color}`} />
                 </div>
-                {item.badge && (
-                  <span className="bg-secondary text-background text-xs font-bold px-2 py-1 rounded">
-                    {item.badge}
-                  </span>
-                )}
               </div>
 
               <h3 className="text-xl font-bold mb-2 text-foreground">{item.title}</h3>
@@ -123,7 +101,7 @@ const Tokenomics = () => {
             </div>
 
             <div className="bg-background/50 rounded-xl p-4 mb-4">
-              <p className="text-xs text-muted-foreground mb-2">BSC Testnet Contract Address</p>
+              <p className="text-xs text-muted-foreground mb-2">Kaspa Mainnet Contract Address</p>
               <p className="text-sm md:text-base font-mono text-foreground break-all">
                 {contractAddress}
               </p>
@@ -152,18 +130,18 @@ const Tokenomics = () => {
                 asChild
               >
                 <a
-                  href={`https://testnet.bscscan.com/address/${contractAddress}`}
+                  href={`https://kaspa.org`}
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  View on BscScan
+                  View on Kaspa Explorer
                 </a>
               </Button>
             </div>
 
             <div className="mt-4 flex items-center justify-center gap-2">
               <div className="w-2 h-2 bg-secondary rounded-full animate-pulse"></div>
-              <span className="text-xs text-muted-foreground">Verified & Audited</span>
+              <span className="text-xs text-muted-foreground">0% Pre-mine • 0% VC • Fair Launch</span>
             </div>
           </div>
         </div>

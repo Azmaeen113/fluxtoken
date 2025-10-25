@@ -3,87 +3,49 @@ import { Rocket, Zap, TrendingUp, Network, Globe, Star, CheckCircle2, Clock, Cir
 const Roadmap = () => {
   const phases = [
     {
-      quarter: "Q1 2025",
+      quarter: "2025–2026",
       title: "Foundation",
       icon: Rocket,
-      status: "completed",
-      milestones: [
-        { text: "Project conceptualization", done: true },
-        { text: "Team formation", done: true },
-        { text: "Whitepaper v1.0", done: true },
-        { text: "Smart contract development", done: true },
-        { text: "Website launch", done: true },
-        { text: "Social media channels", done: true },
-      ],
-    },
-    {
-      quarter: "Q2 2025",
-      title: "Launch",
-      icon: Zap,
       status: "in-progress",
       milestones: [
-        { text: "Smart contract audit", done: false },
-        { text: "Presale launch", done: false },
-        { text: "Community building campaigns", done: false },
-        { text: "Partnership announcements", done: false },
-        { text: "Testnet deployment", done: true },
-        { text: "Marketing blitz", done: false },
+        { text: "Branding & Visual Identity", done: true },
+        { text: "Website Launch", done: true },
+        { text: "MVP Development", done: false },
+        { text: "Community Building", done: false },
+        { text: "Whitepaper v1.0 Release", done: false },
+        { text: "Initial Network Testing", done: false },
+        { text: "Provider Onboarding System", done: false },
+        { text: "Beta Testing Program", done: false },
       ],
     },
     {
-      quarter: "Q3 2025",
-      title: "Growth",
-      icon: TrendingUp,
+      quarter: "2026–2027",
+      title: "Compute Layer",
+      icon: Zap,
       status: "upcoming",
       milestones: [
-        { text: "DEX listing (PancakeSwap)", done: false },
-        { text: "CoinMarketCap & CoinGecko listing", done: false },
-        { text: "First IoT device integration", done: false },
-        { text: "Community governance launch", done: false },
-        { text: "10,000 holder milestone", done: false },
-        { text: "Strategic partnerships", done: false },
+        { text: "Proof-of-Compute Protocol Launch", done: false },
+        { text: "Node Network Deployment", done: false },
+        { text: "Provider Dashboard Release", done: false },
+        { text: "Compute Marketplace Beta", done: false },
+        { text: "API & SDK Development", done: false },
+        { text: "Smart Contract Integration", done: false },
+        { text: "Kaspa BlockDAG Integration", done: false },
       ],
     },
     {
-      quarter: "Q4 2025",
+      quarter: "2028+",
       title: "Expansion",
-      icon: Network,
-      status: "upcoming",
-      milestones: [
-        { text: "CEX listings", done: false },
-        { text: "IoT device marketplace beta", done: false },
-        { text: "Energy credit trading platform", done: false },
-        { text: "Mobile app launch", done: false },
-        { text: "Cross-chain bridge development", done: false },
-        { text: "Global marketing campaign", done: false },
-      ],
-    },
-    {
-      quarter: "Q1 2026",
-      title: "Ecosystem",
-      icon: Globe,
+      icon: TrendingUp,
       status: "future",
       milestones: [
-        { text: "Full IoT marketplace launch", done: false },
-        { text: "Renewable energy marketplace", done: false },
-        { text: "DAO implementation", done: false },
-        { text: "Hardware wallet integration", done: false },
-        { text: "Enterprise partnerships", done: false },
-        { text: "100,000 holder milestone", done: false },
-      ],
-    },
-    {
-      quarter: "Q2 2026+",
-      title: "Revolution",
-      icon: Star,
-      status: "future",
-      milestones: [
-        { text: "Global IoT network launch", done: false },
-        { text: "Major exchange listings", done: false },
-        { text: "Real-world energy grid integration", done: false },
-        { text: "Mainstream adoption push", done: false },
-        { text: "Carbon credit marketplace", done: false },
-        { text: "Becoming industry standard", done: false },
+        { text: "Strategic Partnerships", done: false },
+        { text: "Enterprise Client Onboarding", done: false },
+        { text: "Marketplace Full Launch", done: false },
+        { text: "Cross-chain Integration", done: false },
+        { text: "Advanced Compute Features", done: false },
+        { text: "Global Network Expansion", done: false },
+        { text: "Mainnet Optimization", done: false },
       ],
     },
   ];
@@ -136,7 +98,7 @@ const Roadmap = () => {
           <h2 className="text-4xl md:text-6xl font-bold mb-4">
             <span className="text-gradient">Roadmap</span>
           </h2>
-          <p className="text-xl text-muted-foreground">Building Tomorrow, Today</p>
+          <p className="text-xl text-muted-foreground">Building the Future of Decentralized Compute</p>
         </div>
 
         {/* Timeline */}

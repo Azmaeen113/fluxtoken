@@ -12,35 +12,35 @@ const Community = () => {
       name: "Telegram",
       icon: Send,
       members: "12.5K",
-      description: "Join our community of innovators",
+      description: "Real-time updates, community discussions, and direct team access",
       status: "1,234 Online",
       gradient: "from-primary to-purple-500",
-      link: "#",
+      link: "#", // TODO: Add Telegram link
     },
     {
-      name: "Twitter/X",
+      name: "X (Twitter)",
       icon: Twitter,
       members: "8.3K",
-      description: "Stay updated with latest news",
+      description: "Latest news, announcements, and project updates",
       status: "Active Daily",
       gradient: "from-purple-500 to-secondary",
-      link: "#",
+      link: "https://x.com/KASCompute",
+    },
+    {
+      name: "Instagram",
+      icon: MessageCircle,
+      members: "5.7K",
+      description: "Visual updates and community highlights",
+      status: "24/7 Active",
+      gradient: "from-secondary to-accent",
+      link: "https://www.instagram.com/kascompute/",
     },
     {
       name: "Discord",
-      icon: MessageCircle,
-      members: "5.7K",
-      description: "Connect with the team and community",
-      status: "24/7 Active",
-      gradient: "from-secondary to-accent",
-      link: "#",
-    },
-    {
-      name: "Medium",
       icon: Globe,
-      members: "3.2K",
-      description: "Read our latest insights",
-      status: "Weekly Updates",
+      members: "Coming Soon",
+      description: "Connect with developers and community members",
+      status: "LAUNCHING SOON",
       gradient: "from-accent to-primary",
       link: "#",
     },
@@ -48,9 +48,9 @@ const Community = () => {
 
   const stats = [
     { label: "Community Members", value: "25K+" },
-    { label: "Daily Active Users", value: "3.5K" },
+    { label: "Active Providers", value: "3.5K" },
     { label: "Countries", value: "120+" },
-    { label: "Growth Rate", value: "+45%" },
+    { label: "Network Uptime", value: "99.9%" },
   ];
 
   const handleSubscribe = (e: React.FormEvent) => {
@@ -71,10 +71,10 @@ const Community = () => {
         {/* Header */}
         <div className="text-center mb-16 animate-fade-in">
           <h2 className="text-4xl md:text-6xl font-bold mb-4">
-            <span className="text-gradient">Join the Revolution</span>
+            <span className="text-gradient">Join the KASCompute Community</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Be part of the movement toward a sustainable, connected future
+            Connect with builders, providers, and innovators shaping the future of decentralized compute
           </p>
         </div>
 
@@ -133,7 +133,7 @@ const Community = () => {
               <Mail className="w-8 h-8 text-background" />
             </div>
 
-            <h3 className="text-2xl md:text-3xl font-bold mb-3 text-foreground">Stay Updated</h3>
+            <h3 className="text-2xl font-bold text-foreground">Stay Updated</h3>
             <p className="text-muted-foreground mb-6">
               Subscribe to our newsletter for the latest updates, insights, and exclusive announcements
             </p>

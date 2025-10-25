@@ -4,34 +4,34 @@ const Technology = () => {
   const technologies = [
     {
       icon: Database,
-      title: "BSC Blockchain",
+      title: "Kaspa BlockDAG",
       features: [
-        "Fast transactions (3-5 sec)",
-        "Low gas fees",
-        "Proven security",
-        "EVM compatible",
+        "1-second block times",
+        "Parallel block processing",
+        "Infinite scalability potential",
+        "Proven security model",
       ],
       gradient: "from-primary to-purple-500",
     },
     {
       icon: Cpu,
-      title: "Smart Device Network",
+      title: "Proof-of-Compute",
       features: [
-        "Real-time monitoring",
-        "Automated control",
-        "Data analytics",
-        "Device authentication",
+        "Fair reward distribution",
+        "Real-time verification",
+        "Hardware-agnostic protocol",
+        "Energy-efficient validation",
       ],
       gradient: "from-purple-500 to-secondary",
     },
     {
       icon: Zap,
-      title: "Renewable Energy Platform",
+      title: "Global Network",
       features: [
-        "Energy trading",
-        "Carbon tracking",
-        "Grid optimization",
-        "Reward distribution",
+        "Distributed architecture",
+        "Low-latency routing",
+        "Geographic redundancy",
+        "99.9% uptime target",
       ],
       gradient: "from-secondary to-accent",
     },
@@ -39,9 +39,9 @@ const Technology = () => {
       icon: Shield,
       title: "Enterprise Security",
       features: [
+        "End-to-end encryption",
         "Smart contract audits",
-        "Multi-sig wallets",
-        "Encrypted data",
+        "Multi-signature controls",
         "Regular security updates",
       ],
       gradient: "from-accent to-primary",
@@ -60,7 +60,7 @@ const Technology = () => {
           <h2 className="text-4xl md:text-6xl font-bold mb-4">
             <span className="text-gradient">Cutting-Edge Technology</span>
           </h2>
-          <p className="text-xl text-muted-foreground">Built for the Future</p>
+          <p className="text-xl text-muted-foreground">Built on Kaspa's Revolutionary BlockDAG</p>
         </div>
 
         {/* Technology Cards */}
@@ -99,11 +99,11 @@ const Technology = () => {
           </h3>
           <div className="grid md:grid-cols-3 gap-6">
             <div className="text-center">
-              <div className="text-3xl font-bold text-gradient mb-2">~5 sec</div>
-              <div className="text-sm text-muted-foreground">Transaction Speed</div>
+              <div className="text-3xl font-bold text-gradient mb-2">~1 sec</div>
+              <div className="text-sm text-muted-foreground">Block Time</div>
             </div>
             <div className="text-center">
-              <div className="text-3xl font-bold text-gradient mb-2">BEP-20</div>
+              <div className="text-3xl font-bold text-gradient mb-2">KCT</div>
               <div className="text-sm text-muted-foreground">Token Standard</div>
             </div>
             <div className="text-center">

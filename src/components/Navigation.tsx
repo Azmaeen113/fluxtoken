@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import fluxLogo from "@/assets/flux-logo.png";
+import kascomputeLogo from "/logo 4.png";
 
 const Navigation = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -25,7 +25,7 @@ const Navigation = () => {
 
   const navItems = [
     { label: "HOME", id: "hero" },
-    { label: "ABOUT", id: "about" },
+    { label: "VISION", id: "about" },
     { label: "TOKENOMICS", id: "tokenomics" },
     { label: "ROADMAP", id: "roadmap" },
     { label: "TECHNOLOGY", id: "technology" },
@@ -44,11 +44,11 @@ const Navigation = () => {
           {/* Logo */}
           <div className="flex items-center gap-3">
             <img
-              src={fluxLogo}
-              alt="FLUX Token"
-              className="h-10 w-10 animate-pulse-glow"
+              src={kascomputeLogo}
+              alt="KASCompute Logo"
+              className="h-12 w-12 animate-pulse-glow"
             />
-            <span className="text-2xl font-bold text-gradient">FLUX</span>
+            <span className="text-2xl font-bold text-gradient">KASCompute</span>
           </div>
 
           {/* Desktop Navigation */}
@@ -68,7 +68,7 @@ const Navigation = () => {
           {/* CTA Button */}
           <div className="hidden lg:block">
             <Button className="bg-gradient-to-r from-primary to-secondary text-background font-bold hover:shadow-lg hover:shadow-primary/50 transition-all">
-              Buy FLUX
+              Read Whitepaper
             </Button>
           </div>
 
@@ -94,7 +94,7 @@ const Navigation = () => {
               </button>
             ))}
             <Button className="w-full bg-gradient-to-r from-primary to-secondary text-background font-bold">
-              Buy FLUX
+              Read Whitepaper
             </Button>
           </div>
         )}

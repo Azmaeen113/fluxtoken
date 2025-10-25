@@ -3,12 +3,12 @@ import { Button } from "@/components/ui/button";
 
 const Whitepaper = () => {
   const topics = [
-    "Technical architecture",
-    "Tokenomics deep dive",
-    "IoT integration roadmap",
-    "Energy marketplace mechanics",
-    "Governance model",
-    "Security measures",
+    "Technical Architecture & Infrastructure",
+    "Proof-of-Compute Protocol Design",
+    "Tokenomics & Emission Model",
+    "Network Security & Verification",
+    "Roadmap & Development Timeline",
+    "Use Cases & Applications",
   ];
 
   return (
@@ -23,8 +23,7 @@ const Whitepaper = () => {
             <span className="text-gradient">Dive Into the Details</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Explore our comprehensive whitepaper to understand how we're revolutionizing the
-            intersection of IoT, renewable energy, and blockchain technology
+            Explore our comprehensive whitepaper to understand how we're revolutionizing decentralized computing through Kaspa's blockDAG technology
           </p>
         </div>
 
@@ -41,10 +40,10 @@ const Whitepaper = () => {
 
               {/* Content */}
               <div className="flex-1 text-center md:text-left">
-                <h3 className="text-3xl font-bold mb-4 text-foreground">FLUX Whitepaper v1.0</h3>
+                <h3 className="text-3xl font-bold mb-4 text-foreground">KASCompute Whitepaper v1.0</h3>
                 <p className="text-muted-foreground mb-6 leading-relaxed">
-                  A comprehensive guide to the FLUX ecosystem, covering our vision, technology,
-                  tokenomics, and roadmap for creating a sustainable, decentralized future.
+                  A comprehensive guide to the KASCompute ecosystem, covering our vision, technology,
+                  tokenomics, and roadmap for creating a decentralized compute network powered by Kaspa.
                 </p>
 
                 {/* Topics Covered */}

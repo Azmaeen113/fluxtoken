@@ -1,14 +1,14 @@
 import { ArrowDown, TrendingUp, Users, Zap } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { SparklesCore } from "@/components/ui/sparkles";
-import fluxLogo from "@/assets/flux-logo.png";
+import kascomputeLogo from "/logo 4.png";
 
 const Hero = () => {
   const stats = [
     { icon: TrendingUp, label: "Market Cap", value: "$5.2M" },
-    { icon: Zap, label: "Total Supply", value: "100M" },
-    { icon: Users, label: "Holders", value: "12.5K" },
-    { icon: TrendingUp, label: "24h Volume", value: "$850K" },
+    { icon: Zap, label: "Total Supply", value: "10B KCT" },
+    { icon: Users, label: "Active Providers", value: "12.5K" },
+    { icon: TrendingUp, label: "Network Uptime", value: "99.9%" },
   ];
 
   return (
@@ -38,30 +38,32 @@ const Hero = () => {
           {/* Logo */}
           <div className="flex justify-center mb-8">
             <img
-              src={fluxLogo}
-              alt="FLUX Token"
-              className="w-32 h-32 md:w-40 md:h-40 animate-float drop-shadow-2xl"
+              src={kascomputeLogo}
+              alt="KASCompute Logo"
+              className="w-48 h-48 md:w-56 md:h-56 animate-float drop-shadow-2xl"
             />
+          </div>
+
+          {/* Above Headline */}
+          <div className="text-lg md:text-xl text-primary font-medium mb-4">
+            Decentralized Compute Power — Powered by Kaspa
           </div>
 
           {/* Main Headline */}
           <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold leading-tight">
             <span className="text-gradient">The Future of</span>
             <br />
-            <span className="text-foreground">IoT & Energy</span>
+            <span className="text-foreground">Decentralized Computing</span>
           </h1>
 
           {/* Subheadline */}
           <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-            Powering a decentralized ecosystem that integrates{" "}
-            <span className="text-secondary font-semibold">renewable energy</span> and{" "}
-            <span className="text-primary font-semibold">IoT infrastructure</span> through
-            blockchain — building a sustainable future
+            Turning idle GPUs & CPUs into decentralized compute power.
           </p>
 
           {/* Token Display */}
           <div className="inline-block glass-card px-8 py-4 rounded-2xl animate-pulse-glow">
-            <div className="text-4xl md:text-5xl font-bold text-gradient">$FLUX</div>
+            <div className="text-4xl md:text-5xl font-bold text-gradient">$KCT</div>
             <div className="text-sm text-muted-foreground mt-1">Building Tomorrow</div>
           </div>
 
@@ -72,14 +74,21 @@ const Hero = () => {
               className="bg-gradient-to-r from-primary to-secondary text-background font-bold text-lg px-8 py-6 hover:shadow-2xl hover:shadow-primary/50 transition-all hover:scale-105"
             >
               <Zap className="mr-2" size={20} />
-              Buy $FLUX Now
+              Read Whitepaper
             </Button>
             <Button
               size="lg"
               variant="outline"
               className="border-2 border-primary text-primary hover:bg-primary/10 font-bold text-lg px-8 py-6"
             >
-              Read Whitepaper
+              Join Telegram
+            </Button>
+            <Button
+              size="lg"
+              variant="outline"
+              className="border-2 border-primary text-primary hover:bg-primary/10 font-bold text-lg px-8 py-6"
+            >
+              Become a Provider
             </Button>
           </div>
 
